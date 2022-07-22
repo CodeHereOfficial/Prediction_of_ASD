@@ -1,0 +1,236 @@
+
+  {% extends "layout.html" %} {% block body%}
+
+
+    <main id="main">
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="padd-section">
+        <div class="container" data-aos="fade-up">
+        <div class="section-title text-center">
+        <h2 style="background-color: #71c55d; margin-top: 5%">Test Yourself</h2>
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+          <form NAME="PE1" onReset="return confirm('Clear entries? Are you sure?')" method="post"  action="/predict">
+          <label for="1">1. Does the patient loot at you when you call his/her name? </label>
+            <select name="QB1" id="1">
+              <option  >Select</option>
+              <option value="1">Yes</option>
+              <option value="0">No</option>
+            </select>
+          <br>
+          <br>
+          <label for="2">2. Does the patient have repetitive behaviour? </label>
+            <select name="QB2" id="2">
+              <option  >Select</option>
+              <option value="1">Yes</option>
+              <option value="0">No</option>
+            </select>
+          <br>
+          <br>
+          <label for="3">3. Does the patient point to indicate that he/she wants something?</label>
+    <select name="QB3" id="3">
+        <option  >Select</option>
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+    </select>
+        <br>
+        <br>
+        <label for="4">4. Is the patient facing difficulty realting to people?</label>
+    <select name="QB4" id="4">
+        <option   >Select</option>
+        <option value="1">Yes</option>
+        <option  value="0">No</option>
+    </select>
+        <br>
+        <br>
+        <label for="5">5. Is there delay in the speech of the patient?</label>
+    <select name="QB5" id="5">
+        <option  >Select</option>
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+    </select>
+        <br>
+        <br>
+        <label for="6">6. Does the patient have social anxiety?</label>
+    <select name="QB6" id="6">
+        <option  >Select</option>
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+    </select>
+        <br>
+        <br>
+        <label for="7">7. Is there lack of social skills in the patient?</label>
+    <select name="QB7" id="7">
+        <option  >Select</option>
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+    </select>
+        <br>
+        <br>
+        <label for="8">8. Does the patient face difficulty in eye contact?</label>
+    <select name="QB8" id="8">
+        <option>Select</option>
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+    </select>
+        <br>
+        <br>
+        <label for="9">9. Do the patient have repetitive behaviour?</label>
+    <select name="QB9" id="9">
+        <option>Select</option>
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+    </select>
+        <br>
+        <br>
+        <label for="10">10. Does the patient have bad executive function?</label>
+    <select name="QB10" id="10">
+        <option  >Select</option>
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+    </select>
+<br>
+        <br>
+    <label for="relation">11. What is the patient relation with who is giving this test?</label>
+        <select name="QB11" id="relation">
+            <option>Select</option>
+            <option value="0">Health care professional</option>
+            <option value="1">Others</option>
+            <option value="2">Parent</option>
+            <option value="3">self</option>
+        </select>
+    <BR>
+<br>
+      <label for="12">12. What is the patient's age</label>
+    <select name="QB12" id="12">
+        <option>Select</option>
+        <option value="1">18 and more</option>
+        <option value="0">Less than 18</option>
+    </select>
+        <br>
+        <br>
+         <label for="13">13. have you used this app before?</label>
+    <select name="QB13" id="13">
+        <option>Select</option>
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+    </select>
+<br>
+        <br>
+        <label for="country">14. What is the country of residence of the patient?</label>
+        <select name="QB14" id="country">
+            <option >Select</option>
+            <option  value="0">United States</option>
+            <option  value="1">Brazil</option>
+            <option  value="2">Spain</option>
+            <option  value="3">New Zealand</option>
+            <option  value="4">Bahamas</option>
+            <option  value="5">Burundi</option>
+            <option  value="6">Jordan</option>
+            <option  value="7">Ireland</option>
+            <option  value="8">United states Emirates</option>
+            <option  value="9">Afghanisthan</option>
+            <option  value="10">United kingdoms</option>
+            <option  value="11">South Africa</option>
+            <option  value="12">Italy</option>
+            <option  value="13">Pakisthan</option>
+            <option  value="14">Egypt</option>
+            <option  value="15">Bangladesh</option>
+            <option  value="16">Chile</option>
+            <option  value="17">France</option>
+            <option  value="18">China</option>
+            <option  value="19">Australia</option>
+            <option  value="20">Canada</option>
+            <option  value="21">Saudi Arabia</option>
+            <option  value="22">Netherlands</option>
+            <option  value="23">Romania</option>
+            <option  value="24">Sweden</option>
+            <option  value="25">Tonga</option>
+            <option  value="26">Oman</option>
+            <option  value="27">India</option>
+            <option  value="28">Philipines</option>
+            <option  value="29">Sri Lanka</option>
+            <option  value="30">Sierra Leone</option>
+            <option  value="31">Ethiopia</option>
+            <option  value="32">Viet Nam</option>
+            <option  value="33">Iran</option>
+            <option  value="34">Costa Rica</option>
+            <option  value="35">Germany</option>
+            <option  value="36">Mexico</option>
+            <option  value="37">Armenia</option>
+            <option  value="38">Iceland</option>
+            <option  value="39">Nicaragua</option>
+            <option  value="40">austria</option>
+            <option  value="41">Russia</option>
+            <option  value="42">American Samoa</option>
+            <option  value="43">Uruguay</option>
+            <option  value="44">Ukraine</option>
+            <option  value="45">Serbia</option>
+            <option  value="46">Portugal</option>
+            <option  value="47">Malaysia</option>
+            <option  value="48">Ecuador</option>
+            <option  value="49">Niger</option>
+            <option  value="50">Belhium</option>
+            <option  value="51">Bolivia</option>
+            <option  value="52">Aruba</option>
+            <option  value="53">Finland</option>
+            <option  value="54">Turkey</option>
+            <option  value="55">Nepal</option>
+            <option  value="56">Indonesia</option>
+            <option  value="57">Angola</option>
+            <option  value="58">Czech Republic</option>
+            <option  value="59">Cyprus</option>
+        </select>
+    <BR>
+        <br>
+        <label for="15">15. Have u had Autism before?</label>
+    <select name="QB15" id="15">
+        <option>Select</option>
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+    </select>
+        <br>
+        <br>
+         <label for="16">16. Is the patient born with jaundice?</label>
+    <select name="QB16" id="16">
+        <option>Select</option>
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+    </select>
+<br>
+<br>
+        <label for="ethnicity">17. What is the ethnicity of the patient?</label>
+        <select name="QB17" id="ethnicity">
+            <option>Select</option>
+            <option  value="0">White-European</option>
+            <option  value="1">Lanito</option>
+            <option  value="2">Others</option>
+            <option  value="3">Black</option>
+            <option  value="4">Asian</option>
+            <option  value="5">Middle Eastern</option>
+            <option  value="6">Pasifika</option>
+            <option  value="7">South Asian</option>
+            <option  value="8">Hispanic</option>
+            <option  value="9">Turkish</option>
+
+        </select>
+<br>
+        <br>
+        <label for="18">18. What is the gender of patient?</label>
+    <select name="QB18" id="18" required>
+        <option>Select</option>
+        <option value="0">Female</option>
+        <option value="1">Male</option>
+    </select>
+
+<br>
+        <br>
+        <input type="submit" name="predict" value="Predict" style="background-color: #71c55d; border-radius: 15%; border-color: white;">
+    
+  </form>
+      </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  {% endblock %}

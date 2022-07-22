@@ -1,0 +1,28 @@
+{% extends "layout.html" %} {% block body%}
+
+<main id="main">
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="padd-section bringToCenter" >
+    <div class="container" data-aos="fade-up">
+    <div  class="section-title text-center ">
+      <h1 style="background-color: #71c55d;">**** PREDICTION ****</h1>
+    <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+    <center>
+      <div style="margin-top: 10%;">
+        
+
+        {% if result==1 %}
+        <h1>The patient is having ASD</h1>
+
+        {% else %}
+        <h1>The patient is not having ASD</h1>
+        {% endif %}
+      </div>
+    </center>
+    </div>
+    </div>
+    </div>
+  </section>
+</main>
+  </body>
+{% endblock %}
